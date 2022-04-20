@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
+$blue: #005b87;
+$red: #ba2613;
+$yellow: #ffac24;
+
+@keyframes slidein {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes slidein1 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes transition {
+  0% {
+    height: 100vh;
+
+    opacity: 1;
+  }
+  100% {
+    height: 0vh;
+    opacity: 1;
+  }
+}
+.primary-font {
+  font-family: "Bebas Neue", cursive;
+}
+.secondary-font {
+  font-family: "Open Sans", sans-serif;
+}
+.blue {
+  color: $blue;
+}
+.red {
+  color: $red;
+}
+.yellow {
+  color: $yellow;
+}
+#preloader {
+  position: absolute;
+  z-index: 100;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  //   opacity: 0;
+  justify-content: center;
+  transition: all 0.5s;
+  align-items: center;
+  img {
+    width: 100px;
+    margin: 0 auto;
+  }
+}
+#transition {
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  opacity: 0;
+  height: 100vh;
+  background-color: #000;
+  animation: transition 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.underline {
+  width: 0%;
+  transition: all 0.5s ease-out;
+  height: 1.5px;
+  background-color: $red;
+}
+.btn-wrap {
+  position: relative;
+}
+.primary-btn {
+  padding: 15px 25px;
+  border: 2px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.24s;
+  //   border-radius: 50px;
+  &:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}
+nav {
+  .burger {
+    font-size: 40px;
+    color: #fff !important;
+  }
+  z-index: 48;
+  .navbar-brand {
+    img {
+      width: 80px;
+    }
+  }
+  .nav-item {
+    &:hover .underline {
+      width: 100%;
+    }
+    .nav-link {
+      letter-spacing: 3px;
+      font-weight: lighter !important;
+      color: #fff !important;
+    }
+  }
+  .dropdown-menu {
+    border-radius: 0 !important;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border: 1px solid white;
+    // border-top: 3px solid $yellow;
+    // min-width: 230px;
+    padding: 0 !important;
+    .dropdown-item {
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      letter-spacing: 1px;
+      padding: 5px 15px;
+      &:hover {
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+      }
+      .iconify {
+        // display: none !important;
+        transition: all 0.3s;
+        opacity: 0;
+      }
+      &:hover .iconify {
+        // display: inline !important;
+        opacity: 1;
+      }
+    }
+  }
+}
+#carousel {
+  height: 100vh;
+  #carousel-slider {
+    .carousel-inner {
+      height: 100vh;
+      .slider-text {
+        width: 60%;
+        margin: 0 auto;
+        .text-inner {
+          h1 {
+            line-height: 90px !important;
+          }
+        }
+        // height: 100%;
+        // z-index: 5;
+      }
+      .carousel-item {
+        .slider-img {
+          width: 45%;
+          position: absolute;
+          // height: 300px;
+          top: 50%;
+          right: -10%;
+        }
+        .text-inner {
+          h1 {
+            font-size: 140px;
+            animation: slidein 1s ease-in;
+            text-shadow: 1px 0px 10px rgba(0, 0, 0, 0.36);
+            span {
+              color: transparent;
+              -webkit-text-stroke-width: 1px;
+              -webkit-text-stroke-color: #fff;
+              text-shadow: none;
+              font-size: 100px;
+            }
+          }
+          p {
+            animation: slidein1 1.3s ease-in;
+          }
+        }
+        video {
+          position: relative;
+          z-index: -1;
+          height: 100vh !important;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:1025px) {
+  #carousel {
+    #carousel-slider {
+      .carousel-inner {
+        .carousel-item {
+          .slider-img {
+            width: 50%;
+            top: 55%;
+          }
+          .slider-text {
+            h1 {
+              font-size: 120px;
+              span {
+                font-size: 80px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:769px) {
+  nav {
+    background-color: #fff;
+    .nav-item {
+      .nav-link {
+        color: #000 !important;
+      }
+    }
+    .dropdown-menu {
+      border: 1px solid #000;
+      .dropdown-item {
+        color: #000;
+      }
+    }
+  }
+  #carousel {
+    #carousel-slider {
+      .carousel-inner {
+        .carousel-item {
+          .slider-img {
+            width: 60%;
+            top: 60%;
+          }
+          .slider-text {
+            margin: 0 100px;
+            p {
+              font-size: 14px;
+            }
+            .text-inner {
+              .btn-wrap {
+                // margin-top: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #carousel {
+    #carousel-slider {
+      .carousel-inner {
+        .carousel-item {
+          .slider-img {
+            width: 80%;
+            top: 70%;
+          }
+          .slider-text {
+            width: 80%;
+            margin: 0 10%;
+            h1 {
+              font-size: 80px;
+              span {
+                font-size: 60px;
+              }
+            }
+            p {
+              font-size: 12px;
+            }
+            // margin: 0 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:375px) {
+  #carousel {
+    #carousel-slider {
+      .carousel-inner {
+        .carousel-item {
+          .slider-img {
+            width: 90%;
+            top: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:321px) {
+  #carousel {
+    #carousel-slider {
+      .carousel-inner {
+        .carousel-item {
+          .slider-img {
+            width: 90%;
+            top: 70%;
+          }
+        }
+      }
+    }
+  }
+}
