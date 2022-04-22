@@ -70,6 +70,8 @@ $gray: #1c1c1c;
   background-image: url("../img/slider-1.jpg");
   background-attachment: fixed;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .dark-overlay {
   position: absolute;
