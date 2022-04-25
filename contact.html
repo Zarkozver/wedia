@@ -30,12 +30,12 @@
     />
     <title>Wedia</title>
   </head>
-  <body class="about-bg">
+  <body>
     <!-- PRELOADER -->
     <div id="preloader">
       <img src="img/logo-transparent.png" alt="" />
     </div>
-    <div class="dark-overlay"></div>
+    <!-- <div class="dark-overlay"></div> -->
     <!-- NAVBAR -->
     <nav
       class="navbar navbar-expand-lg navbar-dark primary-font w-100 position-fixed"
@@ -73,13 +73,13 @@
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fs-6 mx-3" href="about.html"
+              <a class="nav-link fs-6 mx-3" href="about.html"
                 >About
                 <div class="underline"></div
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6 mx-3" href="contact.html"
+              <a class="nav-link active fs-6 mx-3" href="contact.html"
                 >Contact
                 <div class="underline"></div
               ></a>
@@ -116,239 +116,98 @@
         </div>
       </div>
     </nav>
-    <!-- COVER ABOUT -->
-    <div
-      id="cover"
-      class="d-flex justify-content-center position-relative align-items-center"
-    >
-      <!-- <div class="cover-img">
-        <img src="img/logo-transparent-cut.png" alt="logo" />
-      </div> -->
-      <div class="container">
-        <div class="cover-text">
-          <h1 class="primary-font text-white display-1 text-center">
-            about <span> us</span>
-          </h1>
-          <p class="secondary-font text-white text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-            asperiores ullam officiis ducimus beatae, vero vitae maxime dolores
-            cum, aliquam commodi ut, sapiente saepe in nulla fuga est! Optio,
-            similique!
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- ABOUT TEXT -->
-    <div id="about-text">
-      <div class="container-fluid py-5">
-        <div class="row">
-          <div class="col-sm-6 border-end">
-            <!-- <small class="h4 text-white secondary-font"> ABOUT US </small> -->
-            <h1 class="text-light primary-font display-3">
-              Lorem ipsum dolor, sit amet
-              <span class="yellow"> consectetur</span> adipisicing elit. Sequi,
-              recusandae?
+    <!-- CONTACT  -->
+    <div id="contact">
+      <div class="dark-overlay"></div>
+      <div class="container contact-content">
+        <div class="row justify-content-center align-items-center d-flex">
+          <div class="col-lg-6">
+            <h5 class="primary-font text-muted">The crew</h5>
+            <h1 class="primary-font text-white text-uppercase display-2">
+              SAY HI.
+              <span class="yellow">DON'T BE</span>
+              SHY
             </h1>
+            <p class="secondary-font text-white">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem unde quis sed, quo ratione assumenda eius iure ut
+              consectetur illum at quisquam odio eligendi provident facere cum
+              neque totam veritatis!
+            </p>
+            <p>
+              <a href="#" class="text-white mx-3 text-decoration-none"
+                ><span
+                  class="iconify"
+                  data-icon="akar-icons:instagram-fill"
+                ></span>
+              </a>
+              <a href="#" class="text-white mx-3 text-decoration-none">
+                <span class="iconify" data-icon="el:linkedin"></span>
+              </a>
+              <a href="#" class="text-white mx-3 text-decoration-none"
+                ><span class="iconify" data-icon="bi:youtube"></span>
+              </a>
+            </p>
           </div>
-          <div
-            class="col-sm-6 d-flex justify-content-center align-items-center"
-          >
-            <p class="text-white seconadry-font p-3 fs-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-              iure tempore corrupti vel tempora molestias odio eaque ea, aut
-              facere. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <div class="col-lg-6">
+            <div class="contact-form">
+              <form action="#">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="form-control"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 mt-3">
+                    <textarea
+                      name="message"
+                      class="form-control"
+                      id="message"
+                      placeholder="Poruka"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                </div>
+                <input
+                  type="submit"
+                  class="primary-btn text-white btn-wrap mt-4 primary-font h5"
+                  value="Submit"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-              <br />
-              Hic quibusdam dolorum ratione excepturi voluptate dolore alias
-              sunt iste consequuntur tenetur! Quia corrupti eligendi, beatae non
-              ipsa est optio dignissimos quaerat?
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FEATURES -->
-    <div id="features" class="py-sm-5 py-0">
+    <!-- CONTACT IMG -->
+    <div id="contact-img">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-3 feature text-center my-md-0 my-4">
-            <span
-              class="iconify text-white"
-              data-icon="ph:video-camera-fill"
-            ></span>
-            <h3 class="primary-font text-white text-uppercase my-3">
-              Making videos
-            </h3>
-            <p class="secondary-font text-light-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              natus.
-            </p>
+          <div class="col-sm-6 p-0">
+            <img
+              src="img/contact-location.png"
+              alt="location img"
+              class="img-fluid"
+            />
           </div>
-          <div class="col-sm-3 feature text-center my-md-0 my-4">
-            <span
-              class="iconify text-white display-1"
-              data-icon="fa6-solid:photo-film"
-            ></span>
-            <h3 class="primary-font text-white text-uppercase my-3">
-              Making videos
-            </h3>
-            <p class="secondary-font text-light-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              natus.
-            </p>
-          </div>
-          <div class="col-sm-3 feature text-center my-md-0 my-4">
-            <span
-              class="iconify text-white display-1"
-              data-icon="ic:round-camera"
-            ></span>
-            <h3 class="primary-font text-white text-uppercase my-3">
-              Making videos
-            </h3>
-            <p class="secondary-font text-light-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              natus.
-            </p>
-          </div>
-          <div class="col-sm-3 feature text-center my-md-0 my-4">
-            <span
-              class="iconify text-white display-1"
-              data-icon="el:film"
-            ></span>
-            <h3 class="primary-font text-white text-uppercase my-3">
-              Making videos
-            </h3>
-            <p class="secondary-font text-light-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              natus.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ABOUT IMG -->
-    <div id="about-img">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 p-0 m-0">
-            <div class="img-wrap py-5">
-              <div class="main-img position-relative">
-                <img src="img/about-img-1.jpg" alt="slika" class="img-fluid" />
-                <img
-                  src="img/about-img-2.jpg"
-                  alt="slika"
-                  class="secondary-img"
-                />
-                <img
-                  src="img/about-img-3.jpg"
-                  alt="slika"
-                  class="secondary-img"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 m-0 d-flex align-items-center">
-            <div class="w-5">
-              <h5 class="text-muted primary-font">about us</h5>
-              <h2 class="primary-font text-white text-uppercase display-3">
-                Lorem ipsum dolor, sit amet
-                <span class="yellow"> consectetur</span> adipisicing elit.
-              </h2>
-              <!-- <p class="secondary-font text-light-muted">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
-                  nostrum laudantium ex ut sint ullam.
-                </p> -->
-              <p class="secondary-font text-white btn-wrap mt-5">
-                <a href="#" class="primary-btn primary-font h5">
-                  click me here
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ABOUT CAROUSEL -->
-    <!-- <div id="about-carousel" class="my-5">
-      <div class="container-fluid">
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-          <div class="item">
-            <img src="img/logo-transparent.png" alt="img" />
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- team -->
-    <div id="team" class="py-5">
-      <div class="container-fluid px-5">
-        <div class="row">
-          <h5 class="text-center primary-font text-muted">The crew</h5>
-          <h2
-            class="primary-font text-white text-center text-uppercase display-3"
-          >
-            OUR <span>TEAM</span>
-          </h2>
-        </div>
-        <div class="row mt-4">
-          <div class="col-sm-4 crew">
-            <div class="crew-img-wrap">
-              <div class="gradient-overlay"></div>
-              <img src="img/author.jpg" alt="author" class="img-fluid" />
-            </div>
-            <h3 class="primary-font text-center h1 text-white">
-              Ognjen Stamenic
-            </h3>
-          </div>
-          <div class="col-sm-4 crew">
-            <div class="crew-img-wrap">
-              <div class="gradient-overlay"></div>
-              <img src="img/author.jpg" alt="author" class="img-fluid" />
-            </div>
-            <h3 class="primary-font text-center h1 text-white">
-              Ognjen Stamenic
-            </h3>
-          </div>
-          <div class="col-sm-4 crew">
-            <div class="crew-img-wrap">
-              <div class="gradient-overlay"></div>
-              <img src="img/author.jpg" alt="author" class="img-fluid" />
-            </div>
-            <h3 class="primary-font text-center h1 text-white">
-              Ognjen Stamenic
-            </h3>
+          <div class="col-sm-6 p-0">
+            <img src="img/slider-2.jpg" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
