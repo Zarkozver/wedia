@@ -26,6 +26,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
     />
     <title>Wedia</title>
@@ -35,7 +39,6 @@
     <div id="preloader">
       <img src="img/logo-transparent.png" alt="" />
     </div>
-    <!-- <div class="dark-overlay"></div> -->
     <!-- OVERLAY NAV -->
     <div id="side-nav" class="d-lg-none">
       <div class="container side-container">
@@ -58,7 +61,7 @@
 
           <div class="underline"></div>
         </h1>
-        <h1 class="text-center display-2 active my-4">
+        <h1 class="text-center display-2 my-4">
           <a
             href="contact.html"
             class="text-white text-decoration-none text-uppercase primary-font"
@@ -67,7 +70,7 @@
           </a>
           <div class="underline"></div>
         </h1>
-        <h1 class="text-center display-2 my-4">
+        <h1 class="text-center display-2 active my-4">
           <a
             href="portfolio.html"
             class="text-white text-decoration-none text-uppercase primary-font"
@@ -78,9 +81,10 @@
         </h1>
       </div>
     </div>
+    <!-- <div class="dark-overlay"></div> -->
     <!-- NAVBAR -->
     <nav
-      class="navbar navbar-expand-lg navbar-dark primary-font w-100 position-fixed"
+      class="navbar navbar-expand-lg navbar-light primary-font w-100 bg-black"
     >
       <div class="container px-4">
         <a class="navbar-brand" href="#"
@@ -90,13 +94,13 @@
           class="navbar-toggler border-0 text-white"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown-"
+          data-bs-target="#navbarNavDropdowns"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span
-            class="iconify burger text-white"
+            class="iconify burger text-black"
             data-icon="ri:menu-3-line"
           ></span>
         </button>
@@ -121,13 +125,13 @@
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fs-6 mx-3" href="contact.html"
+              <a class="nav-link fs-6 mx-3" href="contact.html"
                 >Contact
                 <div class="underline"></div
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6 mx-3" href="portfolio.html"
+              <a class="nav-link fs-6 mx-3 active" href="portfolio.html"
                 >Portfolio
                 <div class="underline"></div
               ></a>
@@ -164,112 +168,143 @@
         </div>
       </div>
     </nav>
-
-    <!-- CONTACT  -->
-    <div id="contact">
-      <div class="dark-overlay"></div>
-      <div class="container contact-content">
-        <div class="row justify-content-center align-items-center d-flex">
-          <div class="col-lg-6 pt-sm-0 mt-5">
-            <h5 class="primary-font text-muted">The crew</h5>
-            <h1 class="primary-font text-white text-uppercase display-2">
-              SAY HI.
-              <span class="yellow">DON'T BE</span>
-              SHY
-            </h1>
-            <p class="secondary-font text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatem unde quis sed, quo ratione assumenda eius iure ut
-              consectetur illum at quisquam odio eligendi provident facere cum
-              neque totam veritatis!
-            </p>
-            <p>
-              <a href="#" class="text-white mx-3 text-decoration-none"
-                ><span
-                  class="iconify"
-                  data-icon="akar-icons:instagram-fill"
-                ></span>
-              </a>
-              <a href="#" class="text-white mx-3 text-decoration-none">
-                <span class="iconify" data-icon="el:linkedin"></span>
-              </a>
-              <a href="#" class="text-white mx-3 text-decoration-none"
-                ><span class="iconify" data-icon="bi:youtube"></span>
-              </a>
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <div class="contact-form">
-              <form action="#">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      class="form-control"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div class="col-sm-6">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      class="form-control"
-                      placeholder="Email"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12 mt-3">
-                    <textarea
-                      name="message"
-                      class="form-control"
-                      id="message"
-                      placeholder="Poruka"
-                      rows="10"
-                    ></textarea>
-                  </div>
-                </div>
-                <input
-                  type="submit"
-                  class="primary-btn text-white btn-wrap mt-4 primary-font h5"
-                  value="Submit"
-                />
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- CONTACT MAP -->
-    <div id="contact-map">
-      <div class="container-fluid p-0">
-        <!-- <div class="dark-overlay"></div> -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.952292457261!2d20.456704350420804!3d44.802160894146084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a700724b9c42d%3A0x9e7d0e61fee51156!2sMilo%C5%A1a%20Pocerca%2010%2C%20Beograd!5e0!3m2!1sen!2srs!4v1651096714942!5m2!1sen!2srs"
-          style="border: 0"
-          class="w-100 map"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </div>
-    <!-- CONTACT IMG -->
-    <!-- <div id="contact-img">
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 p-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.952292457261!2d20.456704350420804!3d44.802160894146084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a700724b9c42d%3A0x9e7d0e61fee51156!2sMilo%C5%A1a%20Pocerca%2010%2C%20Beograd!5e0!3m2!1sen!2srs!4v1651096714942!5m2!1sen!2srs" style="border:0;" class="w-100 h-100 map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h5 class="primary-font text-muted text-center">The portfolio</h5>
+          <h1 class="primary-font display-1 text-center">
+            Past <span> projects</span>
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-1">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-3"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-4">
+                  <h2 class="primary-font text-white">Svetozar - Yugoslavia</h2>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="col-md-6 p-0">
-            <img src="img/slider-2.jpg" class="img-fluid" alt="" />
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-2">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-3"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-4">
+                  <h2 class="primary-font text-white">Saska Hajder - Plen</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-3">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-3"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-4">
+                  <h2 class="primary-font text-white">Svetozar - Nespretni</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-4">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-3"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-4">
+                  <h2 class="primary-font text-white">Svetozar - Mila</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-5">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-3"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-4">
+                  <h2 class="primary-font text-white">Severin - Demoni</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-6">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-3"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-4">
+                  <h2 class="primary-font text-white">Svetozar - Litar Krvi</h2>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+    <!-- SLIDER -->
+    <!-- Swiper -->
+    <div id="swiper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/portfolio-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/portfolio-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/portfolio-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/portfolio-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/portfolio-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/portfolio-6.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="p-sm-5 pb-sm-1 px-md-1 p-3 pb-1">
       <div class="container">
@@ -373,16 +408,63 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
       crossorigin="anonymous"
     ></script>
     <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="main.js"></script>
     <script>
       var myCarousel = document.querySelector("#carousel-slider");
-
+      //   var carousel = new bootstrap.Carousel(myCarousel, {
+      //     interval: 5000,
+      //     wrap: true,
+      //     pause: false,
+      //   });
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        loop: true,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          425: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
       var overlay = document.getElementById("preloader");
       let date = new Date();
       let year = date.getFullYear();
@@ -399,6 +481,7 @@
       var owl = $(".owl-carousel");
       owl.owlCarousel({
         loop: true,
+        // margin: 10,
         dots: false,
         responsive: {
           0: {
@@ -415,7 +498,6 @@
           },
         },
       });
-
       let nav = true;
       $(".navbar-toggler").click(function () {
         $("#side-nav").slideToggle("slow", function () {
@@ -424,6 +506,14 @@
 
         nav = false;
       });
+      //   owl.on("mousewheel", ".owl-stage", function (e) {
+      //     if (e.deltaY > 0) {
+      //       owl.trigger("next.owl");
+      //     } else {
+      //       owl.trigger("prev.owl");
+      //     }
+      //     e.preventDefault();
+      //   });
     </script>
   </body>
 </html>

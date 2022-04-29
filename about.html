@@ -36,6 +36,48 @@
       <img src="img/logo-transparent.png" alt="" />
     </div>
     <div class="dark-overlay"></div>
+    <!-- OVERLAY NAV -->
+    <div id="side-nav" class="d-lg-none">
+      <div class="container side-container">
+        <h1 class="text-center display-1 my-4">
+          <a
+            href="index.html"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            Home
+          </a>
+          <div class="underline"></div>
+        </h1>
+        <h1 class="text-center display-1 my-4 active">
+          <a
+            href="about.html"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            About
+          </a>
+
+          <div class="underline"></div>
+        </h1>
+        <h1 class="text-center display-2 my-4">
+          <a
+            href="contact.html"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            Contact
+          </a>
+          <div class="underline"></div>
+        </h1>
+        <h1 class="text-center display-2 my-4">
+          <a
+            href="portfolio.html"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            Portfolio
+          </a>
+          <div class="underline"></div>
+        </h1>
+      </div>
+    </div>
     <!-- NAVBAR -->
     <nav
       class="navbar navbar-expand-lg navbar-dark primary-font w-100 position-fixed"
@@ -48,13 +90,13 @@
           class="navbar-toggler border-0 text-white"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
+          data-bs-target="#navbarNavDropdowns"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span
-            class="iconify burger text-dark"
+            class="iconify burger text-white"
             data-icon="ri:menu-3-line"
           ></span>
         </button>
@@ -81,6 +123,12 @@
             <li class="nav-item">
               <a class="nav-link fs-6 mx-3" href="contact.html"
                 >Contact
+                <div class="underline"></div
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 mx-3" href="portfolio.html"
+                >Portfolio
                 <div class="underline"></div
               ></a>
             </li>
@@ -501,6 +549,14 @@
             items: 6,
           },
         },
+      });
+      let nav = true;
+      $(".navbar-toggler").click(function () {
+        $("#side-nav").slideToggle("slow", function () {
+          if ($(this).is(":visible")) $(this).css("display", "flex");
+        });
+
+        nav = false;
       });
       //   owl.on("mousewheel", ".owl-stage", function (e) {
       //     if (e.deltaY > 0) {
