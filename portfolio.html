@@ -478,26 +478,7 @@
         $("#preloader").fadeOut();
         $("#transition").fadeOut();
       });
-      var owl = $(".owl-carousel");
-      owl.owlCarousel({
-        loop: true,
-        // margin: 10,
-        dots: false,
-        responsive: {
-          0: {
-            items: 2,
-          },
-          600: {
-            items: 4,
-          },
-          960: {
-            items: 5,
-          },
-          1200: {
-            items: 6,
-          },
-        },
-      });
+
       let nav = true;
       $(".navbar-toggler").click(function () {
         $("#side-nav").slideToggle("slow", function () {
