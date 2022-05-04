@@ -20,6 +20,7 @@
       href="img/logo-transparent.ico"
       type="image/x-icon"
     />
+
     <link
       rel="stylesheet"
       href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
@@ -32,9 +33,12 @@
       rel="stylesheet"
       href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Wedia</title>
   </head>
-  <body>
+  <body class="portfolio-bg">
+    <div class="dark-overlay-portfolio"></div>
     <!-- PRELOADER -->
     <div id="preloader">
       <img src="img/logo-transparent.png" alt="" />
@@ -84,7 +88,7 @@
     <!-- <div class="dark-overlay"></div> -->
     <!-- NAVBAR -->
     <nav
-      class="navbar navbar-expand-lg navbar-light primary-font w-100 bg-black"
+      class="navbar navbar-expand-lg navbar-light primary-font w-100"
     >
       <div class="container px-4">
         <a class="navbar-brand" href="#"
@@ -100,7 +104,7 @@
           aria-label="Toggle navigation"
         >
           <span
-            class="iconify burger text-black"
+            class="iconify burger text-white"
             data-icon="ri:menu-3-line"
           ></span>
         </button>
@@ -169,11 +173,11 @@
       </div>
     </nav>
     <!-- PORTFOLIO -->
-    <div id="portfolio">
-      <div class="container-fluid">
+    <!-- <div id="portfolio">
+      <div class="container">
         <div class="row">
           <h5 class="primary-font text-muted text-center">The portfolio</h5>
-          <h1 class="primary-font display-1 text-center">
+          <h1 class="primary-font display-1 text-center text-white">
             Past <span> projects</span>
           </h1>
         </div>
@@ -184,12 +188,12 @@
                 <div class="gradient-overlay"></div>
                 <div class="project-play">
                   <span
-                    class="iconify text-white display-3"
+                    class="iconify text-white display-5"
                     data-icon="ion:play-sharp"
                   ></span>
                 </div>
-                <div class="project-text position-relative p-4">
-                  <h2 class="primary-font text-white">Svetozar - Yugoslavia</h2>
+                <div class="project-text position-relative p-3">
+                  <h4 class="primary-font yellow">Svetozar - Yugoslavia</h4>
                 </div>
               </div>
             </a>
@@ -200,12 +204,12 @@
                 <div class="gradient-overlay"></div>
                 <div class="project-play">
                   <span
-                    class="iconify text-white display-3"
+                    class="iconify text-white display-5"
                     data-icon="ion:play-sharp"
                   ></span>
                 </div>
-                <div class="project-text position-relative p-4">
-                  <h2 class="primary-font text-white">Saska Hajder - Plen</h2>
+                <div class="project-text position-relative p-3">
+                  <h4 class="primary-font text-white">Saska Hajder - Plen</h4>
                 </div>
               </div>
             </a>
@@ -216,12 +220,12 @@
                 <div class="gradient-overlay"></div>
                 <div class="project-play">
                   <span
-                    class="iconify text-white display-3"
+                    class="iconify text-white display-5"
                     data-icon="ion:play-sharp"
                   ></span>
                 </div>
-                <div class="project-text position-relative p-4">
-                  <h2 class="primary-font text-white">Svetozar - Nespretni</h2>
+                <div class="project-text position-relative p-3">
+                  <h4 class="primary-font text-white">Svetozar - Nespretni</h4>
                 </div>
               </div>
             </a>
@@ -232,12 +236,12 @@
                 <div class="gradient-overlay"></div>
                 <div class="project-play">
                   <span
-                    class="iconify text-white display-3"
+                    class="iconify text-white display-5"
                     data-icon="ion:play-sharp"
                   ></span>
                 </div>
-                <div class="project-text position-relative p-4">
-                  <h2 class="primary-font text-white">Svetozar - Mila</h2>
+                <div class="project-text position-relative p-3">
+                  <h4 class="primary-font text-white">Svetozar - Mila</h4>
                 </div>
               </div>
             </a>
@@ -248,12 +252,12 @@
                 <div class="gradient-overlay"></div>
                 <div class="project-play">
                   <span
-                    class="iconify text-white display-3"
+                    class="iconify text-white display-5"
                     data-icon="ion:play-sharp"
                   ></span>
                 </div>
-                <div class="project-text position-relative p-4">
-                  <h2 class="primary-font text-white">Severin - Demoni</h2>
+                <div class="project-text position-relative p-3">
+                  <h4 class="primary-font text-white">Severin - Demoni</h4>
                 </div>
               </div>
             </a>
@@ -264,22 +268,29 @@
                 <div class="gradient-overlay"></div>
                 <div class="project-play">
                   <span
-                    class="iconify text-white display-3"
+                    class="iconify text-white display-5"
                     data-icon="ion:play-sharp"
                   ></span>
                 </div>
                 <div class="project-text position-relative p-4">
-                  <h2 class="primary-font text-white">Svetozar - Litar Krvi</h2>
+                  <h4 class="primary-font text-white">Svetozar - Litar Krvi</h4>
                 </div>
               </div>
             </a>
           </div>
         </div>
       </div>
-    </div>
-    <!-- SLIDER -->
+    </div> -->
+    <!-- <div class="neon"></div>
+    <div class="neon reverse"></div> -->
     <!-- Swiper -->
-    <div id="swiper">
+    <div id="swiper" class="container-fluid py-5">
+      <div class="row">
+        <h5 class="primary-font text-muted text-center">The portfolio</h5>
+        <h1 class="primary-font display-1 text-center text-white">
+          Past <span> projects</span>
+        </h1>
+      </div>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -303,6 +314,114 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
+    </div>
+    <!-- VIDEO PROJECTS -->
+    <div id="video-projects">
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/slide-video.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                "Severin - demoni"
+              </h3>
+              <p class="text-light-muted secondary-font d-inline">
+                Video production & scenario
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/slide-video2.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                "Saska hajder - Plen"
+              </h3>
+              <p class="text-light-muted secondary-font d-inline">
+                Video production & scenario
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/slide-video3.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                "Svetozar - Mila"
+              </h3>
+              <p class="text-light-muted secondary-font d-inline">
+                Video production & scenario
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/slide-video2.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                Saska hajder - Plen
+              </h3>
+              <p class="text-light-muted secondary-font d-inline">
+                Video production & scenario
+              </p>
+            </div>
+          </div><div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/slide-video3.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                "Svetozar - Mila"
+              </h3>
+              <p class="text-light-muted secondary-font d-inline">
+                Video production & scenario
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/slide-video2.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                "Saska hajder - Plen"
+              </h3>
+              <p class="text-light-muted secondary-font d-inline">
+                Video production & scenario
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="load">
+          <div class="row">
+          <p class="text-center" data-aos="fade-up">
+            <a
+              href="#"
+              class="text-white load-link text-center secondary-font text-decoration-none"
+              >Load More
+            </a>
+            <div class="underline-load"></div>
+          </p>
+        </div>
+      </div>
+    </div>
     </div>
 
     <!-- FOOTER -->
@@ -414,7 +533,9 @@
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
       crossorigin="anonymous"
     ></script>
-    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
     <script>
       var myCarousel = document.querySelector("#carousel-slider");
       //   var carousel = new bootstrap.Carousel(myCarousel, {
@@ -422,22 +543,24 @@
       //     wrap: true,
       //     pause: false,
       //   });
+      AOS.init({ once: true });
       var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 3,
         loop: true,
+        pagination: false,
         coverflowEffect: {
-          rotate: 50,
+          rotate: 0,
           stretch: 0,
-          depth: 100,
+          depth: 200,
           modifier: 1,
           slideShadows: true,
         },
-        pagination: {
-          el: ".swiper-pagination",
-        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
         breakpoints: {
           320: {
             slidesPerView: 1,
@@ -477,24 +600,40 @@
         $("#preloader").addClass("opacity-0", 2500);
         $("#preloader").fadeOut();
         $("#transition").fadeOut();
+        $(".portfolio-load").slice(0, 2).show();
+        if ($(".portfolio-load:hidden").length != 0) {
+          $("#load").fadeIn("slow");
+        }
+        $("#load").on("click", function (e) {
+          e.preventDefault();
+          $(".portfolio-load:hidden").slice(0, 2).fadeIn("slow");
+          if ($(".portfolio-load:hidden").length == 0) {
+            // $(".load-link").text("No More to view");
+            $("#load").hide();
+          }
+        });
       });
 
-      let nav = true;
+      $("#side-nav").hide();
       $(".navbar-toggler").click(function () {
-        $("#side-nav").slideToggle("slow", function () {
+        $("#side-nav").fadeToggle("fast", function () {
           if ($(this).is(":visible")) $(this).css("display", "flex");
         });
-
-        nav = false;
       });
-      //   owl.on("mousewheel", ".owl-stage", function (e) {
-      //     if (e.deltaY > 0) {
-      //       owl.trigger("next.owl");
-      //     } else {
-      //       owl.trigger("prev.owl");
-      //     }
-      //     e.preventDefault();
-      //   });
+      // Getting video element using jQuery
+      var video = $(".video-project");
+
+      // Check if video is ready to play
+      $(video).on("canplay", function () {
+        $(video)
+          .mouseenter(function () {
+            $(this).get(0).play();
+          })
+          .mouseleave(function () {
+            $(this).get(0).pause();
+            $(this).get(0).currentTime = 0;
+          });
+      });
     </script>
   </body>
 </html>

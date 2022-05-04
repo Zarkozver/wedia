@@ -90,6 +90,9 @@ $gray: #1c1c1c;
 .yellow {
   color: $yellow;
 }
+.bg-gray {
+  background-color: #0c0c0c;
+}
 .about-bg {
   background-image: url("../img/slider-1.jpg");
   background-attachment: fixed;
@@ -107,13 +110,27 @@ $gray: #1c1c1c;
   background-repeat: no-repeat;
   z-index: -2;
 }
+.portfolio-bg {
+  background-image: url("../img/portfolio-bg.jpg");
+  background-attachment: fixed;
+  // position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // z-index: -2;
+}
 #swiper {
   .swiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
+  h1 {
+    span {
+      @include stroke();
+      -webkit-text-stroke-color: $yellow;
+    }
+  }
   .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -126,15 +143,15 @@ $gray: #1c1c1c;
     width: 100%;
   }
 }
-// .dark-overlay {
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.786);
-//   z-index: -1;
-// }
+.dark-overlay-portfolio {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.786);
+  z-index: -1;
+}
 .dark-overlay {
   position: absolute;
   width: 100%;
@@ -427,6 +444,8 @@ nav {
       position: relative;
       overflow: hidden;
       z-index: -1;
+      display: flex;
+      justify-content: center;
       .gradient-overlay {
         position: absolute;
         z-index: 1;
@@ -457,8 +476,12 @@ nav {
             color: $yellow !important;
           }
         }
+        &:hover .iconify {
+          transform: translateY(-10px);
+        }
         .iconify {
           font-size: 4.5rem !important;
+          transition: all 0.2s;
         }
         h3 {
           transition: all 0.2s;
@@ -494,7 +517,8 @@ footer {
 }
 #contact {
   position: relative;
-  height: 650px;
+  // height: 600px;
+  padding: 50px 0px;
   width: 100%;
   z-index: 1;
   overflow: hidden;
@@ -502,8 +526,52 @@ footer {
   background-position: center;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/slider-3.jpg);
+  // background-image: url(../img/slider-3.jpg);
+  background-image: url("../img/contact-location-1.png");
   background-size: cover;
+  .contact-info {
+    // width: auto !important;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(11, 11, 11, 0.807);
+    .icon-info {
+      &:hover {
+        h5,
+        a {
+          color: $yellow !important;
+        }
+      }
+    }
+    a {
+      transition: all 0.2s;
+      &:hover {
+        color: $yellow !important;
+      }
+    }
+    .info-icons {
+      width: 60%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  a {
+    &:focus,
+    &:hover {
+      color: rgb(186, 186, 186);
+    }
+  }
+  .contact-map {
+    margin: 0 auto;
+    width: 300px;
+    .map {
+      // height: 300px;
+      width: 100%;
+      height: 300px;
+      // margin: ;
+    }
+  }
   h1 {
     span {
       @include stroke();
@@ -532,6 +600,7 @@ footer {
       border-bottom: 1.5px solid rgb(144, 144, 144);
       border-radius: 0;
       transition: all 0.3s;
+      color: #fff;
 
       &:focus {
         color: #fff;
@@ -548,9 +617,12 @@ footer {
   }
 }
 #contact-map {
+  // padding: 30px 0px;
   .map {
-    height: 45vh;
-    margin-bottom: -10px;
+    // height: 45vh;
+    width: 300px;
+    height: 300px;
+    margin-bottom: -6px;
   }
 }
 #portfolio {
@@ -636,7 +708,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  // display: none;
   opacity: 1;
   @for $i from 1 to 5 {
     $t: 0.5 + ($i/5);
@@ -665,6 +737,50 @@ footer {
       width: 100% !important;
     }
   }
+}
+#video-projects {
+  h3 {
+    font-style: italic;
+    letter-spacing: 1px;
+    // font-weight: lighter;
+  }
+  p {
+    font-style: italic;
+  }
+  .portfolio-load {
+    display: none;
+  }
+}
+#load {
+  &:hover .underline-load {
+    width: 60px !important;
+  }
+  .underline-load {
+    width: 30px;
+    margin: 0 auto;
+    height: 1px;
+    transition: all 0.5s;
+    background-color: #fff;
+  }
+  p {
+    font-style: normal !important;
+  }
+}
+.neon {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  z-index: -3;
+  left: -10%;
+  transform: rotate(45deg);
+  // transform: skew(45deg);
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 11px 9px $red;
+  box-shadow: 0px 0px 11px 9px $red;
+  filter: blur(4px);
+}
+.reverse {
+  transform: rotate(-40deg) !important;
 }
 @media screen and(max-width:1025px) {
   #carousel {
@@ -763,7 +879,7 @@ footer {
   #contact {
     // height: 90vh;
     padding: 50px 0px;
-    height: 90vh;
+    // height: 90vh;
     align-items: flex-end;
   }
   #cover {
@@ -906,7 +1022,10 @@ footer {
     // align-items: unset !important;
     // height: 100vh;
     height: auto;
-    padding: 70px 0px 30px;
+    .contact-info {
+      width: 100% !important;
+    }
+    padding: 30px 0px 30px;
     .container {
       // padding-top: 100px !important;
       .row {
