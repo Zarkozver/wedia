@@ -50,7 +50,7 @@
         </h1>
         <h1 class="text-center display-1 my-4 active">
           <a
-            href="about.html"
+            href="index.html#cover"
             class="text-white text-decoration-none text-uppercase primary-font"
           >
             About
@@ -83,7 +83,7 @@
       class="navbar navbar-expand-lg navbar-dark primary-font w-100 position-fixed"
     >
       <div class="container px-4">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><img src="img/logo-transparent.png" alt="img"
         /></a>
         <button
@@ -95,10 +95,15 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span
+          <!-- <span
             class="iconify burger text-white"
             data-icon="ri:menu-3-line"
-          ></span>
+          ></span> -->
+          <div id="burger-icon">
+            <div class="burger-line bl-1"></div>
+            <div class="burger-line bl-2"></div>
+            <div class="burger-line bl-3"></div>
+          </div>
         </button>
         <div
           class="collapse navbar-collapse justify-content-end"
@@ -115,7 +120,7 @@
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fs-6 mx-3" href="about.html"
+              <a class="nav-link active fs-6 mx-3" href="index.html#cover"
                 >About
                 <div class="underline"></div
               ></a>
@@ -132,7 +137,7 @@
                 <div class="underline"></div
               ></a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link mx-3 fs-6"
                 href="#"
@@ -159,7 +164,7 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -174,6 +179,7 @@
       </div> -->
       <div class="container">
         <div class="cover-text">
+          <h5 class="primary-font text-muted text-center">information</h5>
           <h1 class="primary-font text-white display-1 text-center">
             about <span> us</span>
           </h1>
@@ -276,21 +282,25 @@
     </div>
     <!-- ABOUT IMG -->
     <div id="about-img">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-sm-6 p-0 m-0">
             <div class="img-wrap py-5">
               <div class="main-img position-relative">
-                <img src="img/about-img-1.jpg" alt="slika" class="img-fluid" />
+                <img
+                  src="img/about-img-1.jpg"
+                  alt="slika"
+                  class="img-fluid rounded-circle"
+                />
                 <img
                   src="img/about-img-2.jpg"
                   alt="slika"
-                  class="secondary-img"
+                  class="secondary-img rounded-circle"
                 />
                 <img
                   src="img/about-img-3.jpg"
                   alt="slika"
-                  class="secondary-img"
+                  class="secondary-img rounded-circle"
                 />
               </div>
             </div>
@@ -361,7 +371,7 @@
     </div> -->
     <!-- team -->
     <div id="team" class="py-5">
-      <div class="container-fluid px-5">
+      <div class="container px-5">
         <div class="row">
           <h5 class="text-center primary-font text-muted">The crew</h5>
           <h2
@@ -379,6 +389,7 @@
             <h3 class="primary-font text-center h1 text-white">
               Ognjen Stamenic
             </h3>
+            <h5 class="primary-font text-muted text-center">founder</h5>
           </div>
           <div class="col-sm-4 crew">
             <div class="crew-img-wrap">
@@ -388,6 +399,7 @@
             <h3 class="primary-font text-center h1 text-white">
               Ognjen Stamenic
             </h3>
+            <h5 class="primary-font text-muted text-center">founder</h5>
           </div>
           <div class="col-sm-4 crew">
             <div class="crew-img-wrap">
@@ -397,6 +409,7 @@
             <h3 class="primary-font text-center h1 text-white">
               Ognjen Stamenic
             </h3>
+            <h5 class="primary-font text-muted text-center">founder</h5>
           </div>
         </div>
       </div>
@@ -520,21 +533,25 @@
       var overlay = document.getElementById("preloader");
       let date = new Date();
       let year = date.getFullYear();
-      console.log(year);
+      // console.log(year);
       $("#year").text(year);
       function dnone() {
         $("#preloader").delay(3000).addClass("d-none");
       }
-      $(document).ready(function () {
-        $("#preloader").addClass("opacity-0", 2500);
+      $(window).on("load", function () {
         $("#preloader").fadeOut();
+        $("#preloader").addClass("opacity-0", 2500);
+
         $("#transition").fadeOut();
       });
-
       $("#side-nav").hide();
       $(".navbar-toggler").click(function () {
+        $(".bl-1").toggleClass("rotate-1", 1000, "easeOutSine");
+        $(".bl-3").toggleClass("rotate-2", 1000, "easeOutSine");
+        $(".bl-2").toggleClass("translate-1", 1000, "easeOutSine");
         $("#side-nav").fadeToggle("fast", function () {
           if ($(this).is(":visible")) $(this).css("display", "flex");
+          $("body").toggleClass("vh-100");
         });
       });
       //   owl.on("mousewheel", ".owl-stage", function (e) {
