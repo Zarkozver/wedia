@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 $blue: #005b87;
-$red: #ba2613;
-$yellow: #ffac24;
+// $red: #ba2613;
+$red: #9d2c2c;
+// $yellow: #ffac24;
+$yellow: #fbaf3b;
 $gray: #1c1c1c;
 
 @mixin stroke {
@@ -77,9 +80,11 @@ $gray: #1c1c1c;
 }
 .primary-font {
   font-family: "Bebas Neue", cursive;
+  // font-family: "Quicksand", sans-serif;
 }
 .secondary-font {
-  font-family: "Open Sans", sans-serif;
+  // font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .blue {
   color: $blue;
@@ -143,7 +148,6 @@ $gray: #1c1c1c;
   opacity: 0;
   // transition: 0.4s;
 }
-
 #burger-icon {
   width: 33px;
   height: 30px;
@@ -560,7 +564,7 @@ footer {
 #contact {
   position: relative;
   // height: 600px;
-  padding: 100px 0px;
+  padding: 150px 0px 100px;
   width: 100%;
   min-height: 70vh;
   z-index: 1;
@@ -932,7 +936,7 @@ footer {
   }
   #contact {
     // height: 90vh;
-    padding: 80px 0px;
+    padding: 120px 0px 80px;
     // height: 90vh;
     align-items: flex-end;
   }
@@ -1090,7 +1094,7 @@ footer {
       width: 100% !important;
     }
     padding: 30px 0px 30px;
-    padding-top: 100px;
+    padding-top: 120px;
     .container {
       // padding-top: 100px !important;
       .row {
