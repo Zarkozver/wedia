@@ -50,7 +50,7 @@
         </h1>
         <h1 class="text-center display-1 my-4">
           <a
-            href="about.html"
+            href="index.html#about"
             class="text-white text-decoration-none text-uppercase primary-font"
           >
             About
@@ -82,7 +82,7 @@
     <!-- <div id="transition"></div> -->
     <!-- NAVBAR -->
     <nav
-      class="navbar navbar-expand-lg navbar-dark primary-font w-100 position-fixed"
+      class="navbar navbar-expand-lg navbar-dark primary-font p-0 w-100 position-absolute"
     >
       <div class="container px-4">
         <a class="navbar-brand" href="index.html"
@@ -92,7 +92,7 @@
           class="navbar-toggler border-0 text-white"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdowns"
+          data-bs-target="#navbarNavDropdown-"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -122,7 +122,7 @@
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6 mx-3" href="#cover"
+              <a class="nav-link fs-6 mx-3" href="index.html#cover"
                 >About
                 <div class="underline"></div
               ></a>
@@ -186,13 +186,11 @@
               class="slider-text d-flex justify-content-center h-100 position-absolute align-items-center"
             >
               <div class="text-inner">
-                <h1 class="text-white primary-font display-1">
+                <h1 class="text-white primary-font display-1 mb-3">
                   wedia <span> ent.</span>
                 </h1>
                 <p class="secondary-font text-white btn-wrap mt-4">
-                  <a href="#" class="primary-btn primary-font h5">
-                    click me here
-                  </a>
+                  <a href="#" class="primary-btn primary-font"> portfolio </a>
                 </p>
               </div>
             </div>
@@ -210,12 +208,12 @@
               class="slider-text d-flex justify-content-center h-100 position-absolute align-items-center"
             >
               <div class="text-inner">
-                <h1 class="text-white primary-font display-1">
+                <h1 class="text-white primary-font display-1 mb-2">
                   wedia <span> ent.</span>
                 </h1>
-                <p class="secondary-font text-white btn-wrap mt-3">
+                <p class="secondary-font text-white btn-wrap mt-4">
                   <a href="#" class="primary-btn primary-font h5">
-                    click me here
+                    portfolio
                   </a>
                 </p>
               </div>
@@ -239,12 +237,12 @@
               class="slider-text d-flex justify-content-center h-100 position-absolute align-items-center"
             >
               <div class="text-inner">
-                <h1 class="text-white primary-font display-1">
+                <h1 class="text-white primary-font display-1 mb-2">
                   wedia <span> ent.</span>
                 </h1>
-                <p class="secondary-font text-white btn-wrap mt-3">
+                <p class="secondary-font text-white btn-wrap mt-4">
                   <a href="#" class="primary-btn primary-font h5">
-                    click me here
+                    portfolio
                   </a>
                 </p>
               </div>
@@ -304,108 +302,196 @@
       <div class="container">
         <div class="cover-text">
           <h5 class="primary-font text-muted text-center">information</h5>
-          <h1 class="primary-font text-white display-1 text-center">
-            about <span> us</span>
+          <h1 class="primary-font text-white display-2 text-center my-0">
+            who are <span> we</span>
           </h1>
-          <p class="secondary-font text-white text-center">
+          <div class="w-100 d-flex justify-content-center">
+            <img src="img/marker-3.png" class="w-150 mb-3" alt="marker" />
+          </div>
+          <!-- <p class="secondary-font text-white text-center">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
             asperiores ullam officiis ducimus beatae, vero vitae maxime dolores
             cum, aliquam commodi ut, sapiente saepe in nulla fuga est! Optio,
             similique!
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
     <!-- ABOUT TEXT -->
     <div id="about-text">
-      <div class="container-fluid py-5">
-        <div class="row">
-          <div class="col-xl-5 offset-xl-1 col-sm-6 offset-sm-0">
-            <!-- <small class="h4 text-white secondary-font"> ABOUT US </small> -->
-            <h1 class="text-light primary-font display-3">
-              Lorem ipsum dolor, sit amet
-              <span class="yellow"> consectetur</span> adipisicing elit. Sequi,
-              recusandae?
-            </h1>
+      <div class="container-fluid">
+        <div class="row py-sm-4 py-3">
+          <div
+            class="col-xl-5 offset-xl-1 col-sm-6 offset-sm-0 d-flex justify-content-center align-items-center position-relative"
+          >
+            <img
+              src="img/slider-2.jpg"
+              alt="about img"
+              class="about-img-s ms-5"
+            />
+            <img
+              src="img/portfolio-bg.jpg"
+              alt="about img"
+              class="about-img-left"
+            />
+            <img src="img/marker-2.png" alt="marker" class="about-img-marker" />
           </div>
           <div
-            class="col-xl-5 col-sm-6 border-start d-flex justify-content-center align-items-center"
+            class="col-xl-5 col-sm-6 about-text-p-1 d-flex justify-content-center align-items-center"
           >
-            <p class="text-white text-end seconadry-font p-3 fs-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-              iure tempore corrupti vel tempora molestias odio eaque ea, aut
-              facere. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
-              <br />
-              Hic quibusdam dolorum ratione excepturi voluptate dolore alias
-              sunt iste consequuntur tenetur! Quia corrupti eligendi, beatae non
-              ipsa est optio dignissimos quaerat?
-            </p>
+            <div class="w-75 my-5">
+              <h2 class="primary-font text-white h1">A short story about us</h2>
+              <p class="text-muted secondary-font fs-6">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Asperiores modi id sunt veniam tempora perferendis odio iste
+                ducimus minima, optio, maxime laboriosam excepturi dolores
+                magnam, voluptas repellendus recusandae repudiandae voluptate.
+              </p>
+              <p class="secondary-font text-white btn-wrap mt-5">
+                <a href="#" class="primary-btn primary-font h5">
+                  click me here
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="circle"></div>
+        <div class="row py-sm-4 py-3 about-row-2">
+          <div
+            class="col-xl-5 offset-xl-1 col-sm-6 about-text-p-2 py-sm-5 py-0 d-flex justify-content-center align-items-center"
+          >
+            <div class="w-75 my-5">
+              <h2 class="primary-font text-white h1">A short story about us</h2>
+              <p class="text-muted secondary-font fs-6">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Asperiores modi id sunt veniam tempora perferendis odio iste
+                ducimus minima, optio, maxime laboriosam excepturi dolores
+                magnam, voluptas repellendus recusandae repudiandae voluptate.
+              </p>
+              <p class="secondary-font text-white btn-wrap mt-5">
+                <a href="#" class="primary-btn primary-font h5">
+                  click me here
+                </a>
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-5 col-sm-6 offset-sm-0 d-flex justify-content-center align-items-center position-relative"
+          >
+            <img
+              src="img/portfolio-img-2.jpg"
+              alt="about img"
+              class="about-img-s ms-5"
+            />
+            <img
+              src="img/slider-3.jpg"
+              alt="about img"
+              class="about-img-right"
+            />
+            <img
+              src="img/marker-2.png"
+              alt="marker"
+              class="about-img-marker flip-h"
+            />
           </div>
         </div>
       </div>
     </div>
     <!-- FEATURES -->
     <div id="features" class="py-sm-5 py-0">
+      <div class="container">
+        <div class="cover-text">
+          <h5 class="primary-font text-muted text-center">services</h5>
+          <h1 class="primary-font text-white display-2 text-center my-0">
+            what we <span> offer</span>
+          </h1>
+          <div class="w-100 d-flex justify-content-center">
+            <img src="img/marker-3.png" class="w-150 mb-3" alt="marker" />
+          </div>
+          <!-- <p class="secondary-font text-white text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+            asperiores ullam officiis ducimus beatae, vero vitae maxime dolores
+            cum, aliquam commodi ut, sapiente saepe in nulla fuga est! Optio,
+            similique!
+          </p> -->
+        </div>
+      </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-3 feature text-center my-md-0 my-4">
+          <div
+            class="col-lg-3 col-md-6 feature align-items-center justify-content-between d-flex my-md-0 my-4"
+          >
             <span
               class="iconify text-white"
               data-icon="ph:video-camera-fill"
             ></span>
-            <h3 class="primary-font text-white text-uppercase my-3">
-              Making videos
-            </h3>
-            <p class="secondary-font text-light-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              natus.
-            </p>
+            <div class="ps-4">
+              <h4 class="primary-font text-white text-uppercase my-3 mb-2">
+                Making videos
+              </h4>
+              <p class="secondary-font text-light-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                natus.
+              </p>
+            </div>
           </div>
-          <div class="col-sm-3 feature text-center my-md-0 my-4">
+          <div
+            class="col-lg-3 col-md-6 feature align-items-center justify-content-between d-flex my-md-0 my-4"
+          >
             <span
               class="iconify text-white display-1"
               data-icon="fa6-solid:photo-film"
             ></span>
-            <h3 class="primary-font text-white text-uppercase my-3">
-              Making videos
-            </h3>
-            <p class="secondary-font text-light-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              natus.
-            </p>
+            <div class="ps-4">
+              <h4 class="primary-font text-white text-uppercase my-3 mb-2">
+                Making videos
+              </h4>
+              <p class="secondary-font text-light-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                natus.
+              </p>
+            </div>
           </div>
-          <div class="col-sm-3 feature text-center my-md-0 my-4">
+          <div
+            class="col-lg-3 col-md-6 feature align-items-center justify-content-between d-flex my-md-0 my-4"
+          >
             <span
               class="iconify text-white display-1"
               data-icon="ic:round-camera"
             ></span>
-            <h3 class="primary-font text-white text-uppercase my-3">
-              Making videos
-            </h3>
-            <p class="secondary-font text-light-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              natus.
-            </p>
+            <div class="ps-4">
+              <h4 class="primary-font text-white text-uppercase my-3 mb-2">
+                Making videos
+              </h4>
+              <p class="secondary-font text-light-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                natus.
+              </p>
+            </div>
           </div>
-          <div class="col-sm-3 feature text-center my-md-0 my-4">
+          <div
+            class="col-lg-3 col-md-6 feature align-items-center justify-content-between d-flex my-md-0 my-4"
+          >
             <span
               class="iconify text-white display-1"
               data-icon="el:film"
             ></span>
-            <h3 class="primary-font text-white text-uppercase my-3">
-              Making videos
-            </h3>
-            <p class="secondary-font text-light-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              natus.
-            </p>
+
+            <div class="ps-4">
+              <h4 class="primary-font text-white text-uppercase my-3 mb-2">
+                Making videos
+              </h4>
+              <p class="secondary-font text-light-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                natus.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- ABOUT IMG -->
-    <div id="about-img">
+    <!-- <div id="about-img">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 p-0 m-0">
@@ -436,10 +522,6 @@
                 Lorem ipsum dolor, sit amet
                 <span class="yellow"> consectetur</span> adipisicing elit.
               </h2>
-              <!-- <p class="secondary-font text-light-muted">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
-                nostrum laudantium ex ut sint ullam.
-              </p> -->
               <p class="secondary-font text-white btn-wrap mt-5">
                 <a href="#" class="primary-btn primary-font h5">
                   click me here
@@ -449,7 +531,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- ABOUT CAROUSEL -->
     <!-- <div id="about-carousel" class="my-5">
       <div class="container-fluid">
@@ -494,7 +576,7 @@
       </div>
     </div> -->
     <!-- team -->
-    <div id="team" class="py-5">
+    <!-- <div id="team" class="py-5">
       <div class="container px-5">
         <div class="row">
           <h5 class="text-center primary-font text-muted">The crew</h5>
@@ -537,8 +619,28 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
+    <!-- BRANDS -->
+    <div id="brands">
+      <div class="dark-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 d-flex justify-content-center">
+            <img src="img/partner-1.png" alt="brand" class="img-fluid" />
+          </div>
+          <div class="col-sm-3 d-flex justify-content-center">
+            <img src="img/partner-2.png" alt="brand" class="img-fluid" />
+          </div>
+          <div class="col-sm-3 d-flex justify-content-center">
+            <img src="img/partner-3.png" alt="brand" class="img-fluid" />
+          </div>
+          <div class="col-sm-3 d-flex justify-content-center">
+            <img src="img/partner-4.png" alt="brand" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- FOOTER -->
     <footer class="p-sm-5 pb-sm-1 px-md-1 p-3 pb-1">
       <div class="container">
