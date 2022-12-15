@@ -752,7 +752,7 @@ function portfolioPage() {
   ];
   for (let i of swiperImages) {
     swiperCarousel.innerHTML += `<div class="swiper-slide">
-                                    <img src="/img/${i}" />
+                                    <img src="img/${i}" />
                                 </div>`;
   }
   swiperCarousel.innerHTML += `<div class="swiper-button-next d-sm-none d-block"></div>
