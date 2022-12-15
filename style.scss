@@ -22,6 +22,14 @@ $gray: #1c1c1c;
     transform: translateX(0px);
   }
 }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes slidedown {
   0% {
     transform: translateY(-50px);
@@ -83,7 +91,6 @@ $gray: #1c1c1c;
     opacity: 1;
   }
 }
-
 * {
   box-sizing: border-box;
   // background-image: url("../img/slider-1.jpg");
@@ -230,10 +237,7 @@ $gray: #1c1c1c;
   left: 0;
   z-index: -1;
 }
-body {
-  // background-color: $gray;
-  // background-image: url("../img/slider-1.jpg");
-}
+
 #preloader {
   position: fixed;
   z-index: 100;
@@ -450,28 +454,7 @@ nav {
     position: relative;
     width: 60%;
     margin: 0 auto;
-    img {
-      // position: absolute;
-      // object-fit: cover;
-      // &:nth-child(1) {
-      //   width: 25%;
-      //   // height: 25%;
-      //   // top: 30%;
-      //   left: 20%;
-      //   top: 15%;
-      //   z-index: 3;
-      // }
-      // &:nth-child(2) {
-      //   width: 50%;
-      //   left: 35%;
-      //   top: 20%;
-      // }
-      // &:nth-child(3) {
-      //   width: 25%;
-      //   left: 65%;
-      //   top: 55%;
-      // }
-    }
+
     .main-img {
       .secondary-img {
         position: absolute;
@@ -607,9 +590,6 @@ nav {
         &:hover .iconify {
           transform: translateY(-10px);
         }
-        span {
-          // width: 30%;
-        }
         .iconify {
           margin: 0px 10px;
           font-size: 120px !important;
@@ -737,7 +717,8 @@ footer {
     // position: absolute;
   }
   .contact-form {
-    input[type="submit"] {
+    input[type="submit"],
+    input[type="button"] {
       background-color: transparent;
       transition: all 0.2s;
       letter-spacing: 1px;
@@ -746,7 +727,10 @@ footer {
         color: #000 !important;
       }
     }
+    select,
+    option,
     input[type="text"],
+    input[type="radio"],
     input[type="email"],
     textarea {
       background-color: transparent;
@@ -806,9 +790,6 @@ footer {
     background-image: url("../img/portfolio-6.jpg");
   }
   .project-link {
-    &:hover .portfolio-project {
-      // background-size: 110%;
-    }
     &:hover .project-text h2 {
       transform: translateX(10px);
     }
@@ -829,8 +810,6 @@ footer {
       display: flex;
       align-items: flex-end;
       .project-play {
-        .iconify {
-        }
         color: #fff;
         position: absolute;
         display: flex;
@@ -903,7 +882,8 @@ footer {
     font-style: italic;
   }
   .portfolio-load {
-    display: none;
+    // display: none;
+    animation: fadein 1s ease;
   }
 }
 #load {
@@ -1036,11 +1016,6 @@ footer {
             margin: 0 100px;
             p {
               font-size: 14px;
-            }
-            .text-inner {
-              .btn-wrap {
-                // margin-top: 30px;
-              }
             }
           }
         }
@@ -1187,9 +1162,6 @@ footer {
     .container-fluid {
       .row {
         .feature {
-          .iconify {
-            // font-size: 4rem !important;
-          }
           h3 {
             transition: all 0.2s;
             font-size: 1.9rem !important;
@@ -1245,8 +1217,7 @@ footer {
     padding-top: 120px;
     .container {
       // padding-top: 100px !important;
-      .row {
-      }
+
       form {
         textarea {
           height: 100px;
